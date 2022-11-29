@@ -1,9 +1,10 @@
 ﻿using System;
-namespace FindMaximumOf3Int
+
+namespace FindMaxOf3Float
 {
-    internal class MaxOf3Int
+    internal class MaxOf3Float
     {
-        public static int findmaxint(int first, int second, int third)
+        public static float findmaxfloat(float first, float second, float third)
         {
             //If first-second>0 && first-third>0
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0 ||
@@ -30,7 +31,7 @@ namespace FindMaximumOf3Int
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Maximum Integer Number Is:" + findmaxint(9, 13, 3));
+            Console.WriteLine("Maximum Float Number Is:" + findmaxfloat(12.5f, 8.34f, 15.74f));
         }
     }
 }
